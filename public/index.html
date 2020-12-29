@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <base href="%PUBLIC_URL%/" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>FrontEnd</title>
+
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        body {
+            margin-bottom: 60px;
+            background-image: url(https://www.mmoschini.com.br/wp-content/uploads/2016/09/background.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            white-space: nowrap;
+            height: 100px;
+            line-height: 60px;
+            background-color: black;
+        }
+
+        :root {
+            --input-padding-x: 1.5rem;
+            --input-padding-y: .75rem;
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root" class="" style="padding-bottom: 100px;padding-top: 70px;"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+
+    -->
+
+    <footer>
+        <div class="container-fluid box-shadow footer text-muted fixed-bottom">
+            <div class="row d-flex flex-row">
+                <div class="col-sm-12 text-md-center pt-3 pb-0 ">
+                    <h5>
+                        <span> <i class=" text-light" aria-hidden="true"></i></span><b>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15.000000pt" height="15.000000pt" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#FFFFFF" stroke="none">
+                                    <path d="M2185 4844 c-991 -134 -1782 -866 -1999 -1849 -62 -282 -62 -708 0
+-990 203 -918 901 -1616 1819 -1819 282 -62 708 -62 990 0 716 158 1310 622
+1625 1269 110 224 174 421 216 665 22 127 30 503 15 641 -124 1087 -963 1942
+-2044 2084 -146 19 -481 19 -622 -1z m431 -724 c153 -13 281 -39 417 -87 462
+-160 840 -538 1000 -1000 121 -348 121 -718 0 -1066 -160 -461 -539 -840
+-1000 -1000 -347 -121 -719 -121 -1066 0 -461 160 -840 539 -1000 1000 -206
+591 -58 1233 387 1679 300 299 655 453 1112 483 12 0 79 -4 150 -9z" />
+                                    <path d="M2204 3442 c-117 -42 -198 -94 -295 -192 -194 -197 -343 -492 -395
+-785 -26 -145 -26 -482 0 -580 32 -123 81 -212 160 -291 81 -81 158 -123 280
+-154 100 -25 300 -27 414 -4 251 51 540 200 822 424 235 186 582 572 650 721
+40 88 18 139 -59 139 -68 0 -119 -36 -300 -213 -296 -287 -489 -438 -697 -543
+-215 -109 -408 -160 -575 -152 -76 4 -104 9 -145 31 -60 30 -116 91 -131 142
+l-11 35 179 136 c458 348 659 611 659 864 0 205 -77 352 -219 422 -37 19 -66
+24 -151 26 -94 2 -113 0 -186 -26z m166 -347 c7 -8 15 -44 17 -79 8 -88 -22
+-181 -85 -271 -57 -81 -202 -223 -318 -312 l-81 -62 14 77 c54 292 210 564
+367 642 49 24 69 25 86 5z" />
+                                </g>
+                            </svg>
+                            Shop
+                        </b>
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 text-center"><small style="float:right">&copy; 2020 - eShop</small></div>
+                <div class="col-md-6">
+                    <div class="input-group-sm input-group mb-0 mt-2 d-flex justify-content-center">
+                        <input type="text" class="form-control " style="max-width:200px;" placeholder="Enter your e-mail address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append"><button class="btn btn-success" type="button" id="button-addon2"> <b>Subscribe</b></button></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3"> <small > eshop@mail.com </small> </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

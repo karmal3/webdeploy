@@ -23,7 +23,7 @@ export class Categories extends Component {
             name: this.name
         }
         window.$("#exampleModalCenter").modal("hide");
-        fetch('/categories', {
+        fetch('https://eshoprest.azurewebsites.net/api/categories', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -55,7 +55,7 @@ export class Categories extends Component {
 
         window.$("#exampleModalCenterEdit" + data.id).modal("hide");
 
-        fetch('/categories/' + data.id, {
+        fetch('https://eshoprest.azurewebsites.net/api/categories/' + data.id, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
@@ -87,7 +87,7 @@ export class Categories extends Component {
             }
         }
 
-        fetch('/categories/' + itemId, options)
+        fetch('https://eshoprest.azurewebsites.net/api/categories/' + itemId, options)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -104,7 +104,7 @@ export class Categories extends Component {
             )
     }
     componentDidMount() {
-        fetch('/categories')
+        fetch('https://eshoprest.azurewebsites.net/api/categories')
             .then(res => res.json())
             .then(
                 (result) => {

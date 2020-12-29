@@ -23,7 +23,7 @@ export class AdInfo extends Component {
             fkAdId: this.fkAdId
         }
         window.$("#exampleModalCenterComment").modal("hide");
-        fetch('/comments', {
+        fetch('https://eshoprest.azurewebsites.net/api/comments', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -51,7 +51,7 @@ export class AdInfo extends Component {
             id: this.id
         }
         window.$("#exampleModalCenterCommentEdit" + data.id).modal("hide");
-        fetch('/comments/' + data.id, {
+        fetch('https://eshoprest.azurewebsites.net/api/comments/' + data.id, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
@@ -83,7 +83,7 @@ export class AdInfo extends Component {
             }
         }
 
-        fetch('/comments/' + itemId, options)
+        fetch('https://eshoprest.azurewebsites.net/api/comments/' + itemId, options)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -103,7 +103,7 @@ export class AdInfo extends Component {
     componentDidMount() {
 
         //console.log(this.props.location.state.adid);
-        fetch('/ads/' + this.props.location.state.adid)
+        fetch('https://eshoprest.azurewebsites.net/api/ads/' + this.props.location.state.adid)
             .then(res => res.json())
             .then(json => {
                 this.setState({
@@ -111,7 +111,7 @@ export class AdInfo extends Component {
                     items: json,
                 })
             });
-        fetch('/ads/' + this.props.location.state.adid + '/comments')
+        fetch('https://eshoprest.azurewebsites.net/api/ads/' + this.props.location.state.adid + '/comments')
             .then(res => res.json())
             .then(json => {
                 this.setState({

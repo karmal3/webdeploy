@@ -17,7 +17,6 @@
     "reactstrap": "^6.3.0",
     "rimraf": "^2.6.2"
   },
-  "proxy": "https://eshoprest.azurewebsites.net/api",
   "devDependencies": {
     "ajv": "^6.9.1",
     "babel-eslint": "^10.1.0",

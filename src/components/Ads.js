@@ -15,7 +15,7 @@ export class Ads extends Component {
     }
 
     componentDidMount() {
-        fetch('/ads')
+        fetch('https://eshoprest.azurewebsites.net/api/ads')
             .then(res => res.json())
             .then(json => {
                 this.setState({

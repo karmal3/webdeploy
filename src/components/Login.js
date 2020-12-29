@@ -13,7 +13,7 @@ export class Login extends Component {
             password: this.password
         }
 
-        fetch('/users/authenticate', {
+        fetch('https://eshoprest.azurewebsites.net/api/users/authenticate', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

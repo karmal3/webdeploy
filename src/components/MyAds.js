@@ -31,7 +31,7 @@ export class MyAds extends Component {
         //console.log(data.fkCategoryId)
 
         window.$("#exampleModalCenter").modal("hide");
-        fetch('/ads', {
+        fetch('https://eshoprest.azurewebsites.net/api/ads', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -74,7 +74,7 @@ export class MyAds extends Component {
         //console.log(data.price)
         //console.log(data.fkCategoryId)
         window.$("#exampleModalCenterAdEdit" + data.id).modal("hide");
-        fetch('/ads/' + data.id, {
+        fetch('https://eshoprest.azurewebsites.net/api/ads/' + data.id, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
@@ -109,7 +109,7 @@ export class MyAds extends Component {
             }
         }
 
-        fetch('/ads/' + itemId, options)
+        fetch('https://eshoprest.azurewebsites.net/api/ads/' + itemId, options)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -127,7 +127,7 @@ export class MyAds extends Component {
     }
 
     componentDidMount() {
-        fetch('/ads')
+        fetch('https://eshoprest.azurewebsites.net/api/ads')
             .then(res => res.json())
             .then(json => {
                 this.setState({
@@ -137,7 +137,7 @@ export class MyAds extends Component {
 
                 })
             });
-        fetch('/categories')
+        fetch('https://eshoprest.azurewebsites.net/api/categories')
             .then(res => res.json())
             .then(
                 (result) => {

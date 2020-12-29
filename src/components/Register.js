@@ -26,7 +26,7 @@ export class Register extends Component {
             city: this.city
         }
 
-        fetch('/users/create', {
+        fetch('https://eshoprest.azurewebsites.net/api/users/create', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

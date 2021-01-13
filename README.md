@@ -1,4 +1,6 @@
+Personal project.(unfinished)
 Web page review link: https://karmal3.github.io/webdeploy/
+Back-end placed to Azure server.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
